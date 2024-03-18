@@ -5,7 +5,7 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_page-1258dfd5.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/_page-28a08fc6.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/start-6626b48c.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index-f0878874.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-0de40d7c.js">
@@ -16,8 +16,7 @@
 		<link rel="modulepreload" href="./_app/immutable/components/pages/_layout.svelte-3baee7e6.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-9cbb603b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/scroll/_page.svelte-0d7a5581.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-7f15d41f.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/todo/_page.svelte-28abdf8f.js">
 	</head>
 	<body>
 		<div style="display: contents">
@@ -32,27 +31,24 @@
 
 <hr>
 
-
-  
-  <main class="svelte-1fk8y27">
-    <div class="container svelte-1fk8y27"><img style="transform: translate(0, 0px)" src="https://www.devsamples.com/parallax-layer0.png" alt="parallax layer 0" class="svelte-1fk8y27"><img style="transform: translate(0, 0px)" src="https://www.devsamples.com/parallax-layer1.png" alt="parallax layer 1" class="svelte-1fk8y27"><img style="transform: translate(0, 0px)" src="https://www.devsamples.com/parallax-layer2.png" alt="parallax layer 2" class="svelte-1fk8y27"><img style="transform: translate(0, 0px)" src="https://www.devsamples.com/parallax-layer3.png" alt="parallax layer 3" class="svelte-1fk8y27"></div>
-  
-    
-    <div class="text svelte-1fk8y27"><p>You have scrolled 0 pixels</p>
-          <p>Keep scrolling...</p></div>
-  </main>
+<div class="container svelte-ww2hmz"><h1>TODO LIST</h1>
+        <form><label for="input">TODO:</label>
+            <input id="input" type="text"></form>
+    <div class="layout"><div style="display:grid"><h1>NEW</h1></div>
+        <div style="display:grid"><h1>COMPLETED</h1></div></div>
+</div>
 
 
-		<script type="module" data-sveltekit-hydrate="o6uh4m">
+		<script type="module" data-sveltekit-hydrate="ke6qdk">
 			import { start } from "./_app/immutable/start-6626b48c.js";
 
 			start({
 				env: {},
 				paths: {"base":"","assets":""},
-				target: document.querySelector('[data-sveltekit-hydrate="o6uh4m"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="ke6qdk"]').parentNode,
 				version: "1710759617239",
 				hydrate: {
-					node_ids: [0, 12],
+					node_ids: [0, 16],
 					data: [null,null],
 					form: null
 				}
