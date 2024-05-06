@@ -1,3 +1,5 @@
+<title>TODO</title>
+
 <div class='container'>
     <h1>TODO LIST</h1>
         <form on:submit|preventDefault={handleSubmit}>

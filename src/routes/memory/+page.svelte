@@ -1,4 +1,8 @@
+<title>Memory Game</title>
+
 <script>
+  let turnBoxNum = 0;
+  let turnBox = true;
   let cards = [];
   for (let index = 0; index < 12; index++) {
     cards.push({
@@ -28,9 +32,17 @@
       }
       cards = cards;
     } else {
-      alert("chill");
+      alert("those cards do not match");
+      turnBoxNum += 1;
+      if (turnBoxNum % 2 == 0) {
+        turnBox=true}
+      else {turnBox=false}
     }
   }
+
+  let red = 0;
+  let blue = 0;
+  
 </script>
 
 <main>
@@ -51,11 +63,16 @@
       </div>
     {/each}
   </div>
+
+  <div class = 'box'></div>
+  <div class = "box" id = "red-box"><p>red</p></div>
+  <div class = "box" id = "blue-box"><p>blue</p></div>
+  <div class = "box" id = "turn-box" style={turnBox?"right: 30px;":"left:30px"}></div>
 </main>
 
 <style>
   main {
-    margin-top: 50px;
+    margin-top: 150px;
     display: flex;
     place-content: center;
     place-items: center;
@@ -63,7 +80,7 @@
 
   .row {
     display: grid;
-    gap: 20px;
+    gap: 40px;
     grid-template-columns: repeat(6, 100px);
     grid-template-rows: repeat(3, 100px);
   }
@@ -84,7 +101,7 @@
 
   .card {
     border: 1px solid black;
-    border-radius: 10% 30% 50% 70%;
+    border-radius: 20px;
     cursor: pointer;
     transition: transform 1s;
     transform-style: preserve-3d;
@@ -114,4 +131,34 @@
     -webkit-backface-visibility: hidden;
     position: absolute;
   }
+
+.box {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  text-align: center;
+  font-size: 30px;
+}
+
+#red-box, #blue-box{
+  bottom: 30px;
+  z-index: 2;
+}
+
+#red-box {
+  background-color: red;
+  left: 30px;
+}
+
+#blue-box {
+  background-color: blue;
+  right: 30px;
+}
+
+#turn-box{
+  bottom: 30px;
+  z-index: 1;
+  background-color: greenyellow;
+  box-shadow: 0 0 20px 20px greenyellow;
+}
 </style>
