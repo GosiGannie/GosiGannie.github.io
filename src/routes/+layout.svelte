@@ -14,7 +14,9 @@
     >GitHub</a
   >
   <a href="/photoapp">Photo App</a>
-  <a href="/Music"></a>
+  <a href="/spotifi-login">Spotifi-login</a>
+  <a href="/spotifi-homepage">Spotifi-homepage</a>
+  <a href="/magic8ball">Magic8Ball</a>
 </nav>
 
 <hr />
